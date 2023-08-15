@@ -22,12 +22,12 @@ const Header = () => {
                             <div className="header__price ">{totalPrice}    грн.</div>
                         </li>
                         <li className='header__favorite'>
-                            <NavLink to={'/react-sneakers/favorite'}>
+                            <NavLink to={'favorite'}>
                                 <img className='header__svg' src="img/heart.svg" alt="Favorite" />
                             </NavLink>
                         </li>
                         <li className='header__users'>
-                            <NavLink to={'/react-sneakers/orders'}>
+                            <NavLink to={'orders'}>
                                 <img className='header__svg' src="img/users.svg" alt="Users" />
                             </NavLink>
                         </li>
