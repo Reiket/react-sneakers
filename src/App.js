@@ -99,7 +99,7 @@ const App = () => {
         <Drawer onRemove={onRemoveItems} items={cartItems} openDrawer={onOpenDrawer} />
         <Header/>
         <Routes>
-          <Route path='' element={<Content isLoading={isLoading} items={items} onSetCartItems={onSetCartItems} />}></Route>
+          <Route path='/react-sneakers' element={<Content isLoading={isLoading} items={items} onSetCartItems={onSetCartItems} />}></Route>
           <Route path='favorite' element={<Favorite/>}></Route>
           <Route path='orders' element={<Orders/>}></Route>
         </Routes>
