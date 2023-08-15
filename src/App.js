@@ -101,7 +101,7 @@ const App = () => {
         <Routes>
           <Route path='' element={<Content isLoading={isLoading} items={items} onSetCartItems={onSetCartItems} />}></Route>
           <Route path='favorite' element={<Favorite/>}></Route>
-          <Route path='order' element={<Orders/>}></Route>
+          <Route path='orders' element={<Orders/>}></Route>
         </Routes>
       </div>
     </AppContext.Provider>
