@@ -28,7 +28,7 @@ const Content = ({onSetFavorite, isLoading, onSetCartItems, items}) => {
                 <div className="content__body">
                     <h1 className="content__title">{searchValue ? `Пошук по запросу: ${searchValue}` : "Всі кросівки"}</h1>
                     <div className='content__search'>
-                        <img className='content__img' src="/img/search.svg" alt="Search" />
+                        <img className='content__img' src="img/search.svg" alt="Search" />
                         <input onChange={onChangeSearchInput} className='content__input' type="search" placeholder='Пошук....' />
                     </div>
                 </div>

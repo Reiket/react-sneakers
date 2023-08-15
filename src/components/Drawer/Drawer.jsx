@@ -33,7 +33,7 @@ const Drawer = (props) => {
                     <div className="drawer__top">
                         <div className="drawer__inner">
                             <h1 className="drawer__title">Кошик</h1>
-                            <button  onClick={() => setOnOpenDrawer(false)} style={{ width: 32 }} className='drawer__remove'><img src="/img/remove.svg" alt="Remove" /></button>
+                            <button  onClick={() => setOnOpenDrawer(false)} style={{ width: 32 }} className='drawer__remove'><img src="img/remove.svg" alt="Remove" /></button>
                         </div>
                     </div>
                     {
@@ -46,7 +46,7 @@ const Drawer = (props) => {
                                 </div>
                             </div>
                         ) : (
-                            <Info setIsOrderComplete={setIsOrderComplete} title= {isOrderComplete ? "Замовлення оформлене" : "Кошик пустий"} description= {isOrderComplete ? `Ваше замовження №${orderId} Дякую за покупку! Слава Україні!` : "Добавте хоча би одну пару кросівок, щоб зробити замовлення"} image={isOrderComplete ? "/img/complete.jpg" : "/img/cart.png"} />
+                            <Info setIsOrderComplete={setIsOrderComplete} title= {isOrderComplete ? "Замовлення оформлене" : "Кошик пустий"} description= {isOrderComplete ? `Ваше замовження №${orderId} Дякую за покупку! Слава Україні!` : "Добавте хоча би одну пару кросівок, щоб зробити замовлення"} image={isOrderComplete ? "img/complete.jpg" : "img/cart.png"} />
                         )
                     }
                     {
@@ -62,7 +62,7 @@ const Drawer = (props) => {
                                     <div className="drawer__lines"></div>
                                     <div className="drawer__sum">{Math.ceil(totalPrice / 100 * 5)} грн.</div>
                                 </div>
-                                <button disabled={isLoading} onClick={onClickOrder} className='drawer__submit'>Оформити замовлення<img src='/img/arrow.svg' alt='Arrow' /></button>
+                                <button disabled={isLoading} onClick={onClickOrder} className='drawer__submit'>Оформити замовлення<img src='img/arrow.svg' alt='Arrow' /></button>
                             </div>
                         )
                     }

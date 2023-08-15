@@ -15,17 +15,17 @@ const Card = ({ onSetCartItems, items,  name, price, src, id, isPlus, favorited 
         <div className='sneakers__cards'>
             <div className='sneakers__favorite'>
                 <button onClick={onClickFavBtn} className="sneakers__unliked">
-                    <img src={isFavorite ? "/img/heart-liked.svg" : "/img/heart.svg"} alt="" />
+                    <img src={isFavorite ? "img/heart-liked.svg" : "img/heart.svg"} alt="" />
                 </button>
             </div>
-            <a href="/"><img className='sneakers__img' width={133} height={112} src={src} alt="" /></a>
+            <a href=""><img className='sneakers__img' width={133} height={112} src={src} alt="" /></a>
             <h5 className='sneakers__title'>{name}</h5>
             <div className='sneakers__info'>
                 <div className='sneakers__price'>
                     <span>Ціна:</span>
                     <b>{price} грн.</b>
                 </div>
-                {isPlus && <button className={state.isItemAdded(id) ? 'sneakers__button sneakers__remove' : 'sneakers__button sneakers__add'} onClick={onClickAddBtn}><img src={state.isItemAdded(id) ? "/img/check.svg" : "/img/plus.svg"} alt="" /></button>}
+                {isPlus && <button className={state.isItemAdded(id) ? 'sneakers__button sneakers__remove' : 'sneakers__button sneakers__add'} onClick={onClickAddBtn}><img src={state.isItemAdded(id) ? "img/check.svg" : "img/plus.svg"} alt="" /></button>}
             </div>
         </div>
     );

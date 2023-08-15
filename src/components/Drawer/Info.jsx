@@ -12,7 +12,7 @@ const Info = ({title, description, image, setIsOrderComplete}) => {
             <img src={image} alt="Cart" />
             <h1 className="info-drawer__title">{title}</h1>
             <div className="info-drawer__text">{description}</div>
-            <button onClick={onCloseBtn} className="info-drawer__submit"><img src='/img/arrow-rotate.svg' alt='Arrow' />Назад</button>
+            <button onClick={onCloseBtn} className="info-drawer__submit"><img src='img/arrow-rotate.svg' alt='Arrow' />Назад</button>
         </div>
     );
 }
