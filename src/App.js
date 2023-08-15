@@ -100,8 +100,8 @@ const App = () => {
         <Header/>
         <Routes>
           <Route path='/react-sneakers' element={<Content isLoading={isLoading} items={items} onSetCartItems={onSetCartItems} />}></Route>
-          <Route path='react-sneakers/favorite' element={<Favorite/>}></Route>
-          <Route path='react-sneakers/orders' element={<Orders/>}></Route>
+          <Route path='/react-sneakers/favorite' element={<Favorite/>}></Route>
+          <Route path='/react-sneakers/orders' element={<Orders/>}></Route>
         </Routes>
       </div>
     </AppContext.Provider>
